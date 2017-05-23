@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+
+# frogs
+
+Data from the Calaveras Jumping Frog Jubilee, as collected for this paper by
+Astley et al (proper citation coming, on an airplane!): Chasing maximal
+performance: a cautionary tale from the celebrated jumping frogs of Calaveras
+County.
+
+DATA IS NOT CLEANED YET! Still under development.
+
+## Installation
+
+You can install frogs from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("jennybc/frogs")
+```
+
+## Getting to know the frogs
+
+At this point, all we know is that each row is one frog-jump. Frog ids coming ...
+
+```{r}
+library(frogs)
+library(tidyverse)
+
+frogs
+glimpse(frogs)
+```
+
+An early figure. Do frogs need to warm up? Do they fatigue? Yes and yes.
+
+```{r frog-fatigue, echo = FALSE}
+frogs2 <- frogs %>% 
+  filter(jump_n < 7) %>% 
+  mutate(
+    jump_n = as.factor(as.integer(jump_n))
+  )
+ggplot(frogs2, aes(x = distance, color = jump_n)) +
+  geom_density()
+```
+
