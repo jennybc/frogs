@@ -25,6 +25,10 @@ frogs <- frogs %>%
     velocity_00 = X__4,
     velocity_01 = Vel,
     velocity_10 = X__3
-  )
+  ) %>%
+  mutate(
+    row = seq_len(nrow(.))
+  ) %>%
+  select(row, everything())
 
 use_data(frogs, overwrite = TRUE)
