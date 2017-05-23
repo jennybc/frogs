@@ -38,8 +38,8 @@
 #' * **angle_00, angle_01, angle_11 and velocity_00, velocity_01, velocity_11**
 #' Calculated jump angle and velocity as described in the paper.  Because jump
 #' duration could only be measured in the integer number of video frames, the
-#' following two columns after each are the angles and velocities for +1 and -1
-#' frame of the actual duration.
+#' variables reflect the angles and velocities for three adjacent frames (JB:
+#' I'm not sure I understand the annotation here -- CHECK WITH ASTLEY).
 #'
 #' @source http://jeb.biologists.org/content/216/21/3947
 #' @importFrom tibble tibble

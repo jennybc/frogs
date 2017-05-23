@@ -19,12 +19,12 @@ frogs <- frogs %>%
     distance_3 = `3-jump dist`,
     distance_3_off = `measured 3-jump`,
     duration = `jump duration`,
-    angle_00 = X__1,
+    angle_00 = X__2,
     angle_01 = angle,
-    angle_10 = X__2,
-    velocity_00 = X__3,
+    angle_10 = X__1,
+    velocity_00 = X__4,
     velocity_01 = Vel,
-    velocity_10 = X__4
+    velocity_10 = X__3
   )
 
 use_data(frogs, overwrite = TRUE)
