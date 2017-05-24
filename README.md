@@ -27,7 +27,7 @@ At this point, all we know is that each row is one frog-jump. Frog ids coming ..
 ``` r
 library(frogs)
 library(tidyverse)
-#> + ggplot2 2.2.1             Date: 2017-05-23
+#> + ggplot2 2.2.1             Date: 2017-05-24
 #> + tibble  1.3.1                R: 3.3.2
 #> + tidyr   0.6.2.9000          OS: OS X El Capitan 10.11.6
 #> + readr   1.1.0              GUI: X11
@@ -42,17 +42,17 @@ library(tidyverse)
 frogs
 #> # A tibble: 3,272 x 15
 #>      row distance duration distance_3 jump_n frog_type distance_3_off
-#>    <int>    <dbl>    <dbl>      <dbl>  <dbl>     <dbl>          <dbl>
-#>  1     1  165.950  0.58333          0      1         3             -1
-#>  2     2  177.480  0.71667          0      2         3             -1
-#>  3     3    0.000  0.00000          0      3         3             -1
-#>  4     4   27.158  0.43333          0      1         3             -1
-#>  5     5    0.000  0.00000          0      2         3             -1
-#>  6     6    0.000  0.00000          0      3         3             -1
-#>  7     7   40.914  0.40000          0      1         3             -1
-#>  8     8    0.000  0.00000          0      2         3             -1
-#>  9     9    0.000  0.00000          0      3         3             -1
-#> 10    10   35.853  0.48333          0      1         3             -1
+#>    <int>    <dbl>    <dbl>      <dbl>  <int>     <chr>          <dbl>
+#>  1     1  165.950  0.58333          0      1       pro             -1
+#>  2     2  177.480  0.71667          0      2       pro             -1
+#>  3     3    0.000  0.00000          0      3       pro             -1
+#>  4     4   27.158  0.43333          0      1       pro             -1
+#>  5     5    0.000  0.00000          0      2       pro             -1
+#>  6     6    0.000  0.00000          0      3       pro             -1
+#>  7     7   40.914  0.40000          0      1       pro             -1
+#>  8     8    0.000  0.00000          0      2       pro             -1
+#>  9     9    0.000  0.00000          0      3       pro             -1
+#> 10    10   35.853  0.48333          0      1       pro             -1
 #> # ... with 3,262 more rows, and 8 more variables: distance_rel <dbl>,
 #> #   day <dbl>, angle_01 <dbl>, angle_10 <dbl>, angle_00 <dbl>,
 #> #   velocity_01 <dbl>, velocity_10 <dbl>, velocity_00 <dbl>
@@ -63,8 +63,8 @@ glimpse(frogs)
 #> $ distance       <dbl> 165.950, 177.480, 0.000, 27.158, 0.000, 0.000, ...
 #> $ duration       <dbl> 0.58333, 0.71667, 0.00000, 0.43333, 0.00000, 0....
 #> $ distance_3     <dbl> 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00,...
-#> $ jump_n         <dbl> 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1,...
-#> $ frog_type      <dbl> 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,...
+#> $ jump_n         <int> 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1,...
+#> $ frog_type      <chr> "pro", "pro", "pro", "pro", "pro", "pro", "pro"...
 #> $ distance_3_off <dbl> -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,...
 #> $ distance_rel   <dbl> 1.00000, 1.06950, 0.00000, 1.00000, 0.00000, 0....
 #> $ day            <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,...
@@ -79,3 +79,7 @@ glimpse(frogs)
 An early figure. Do frogs need to warm up? Do they fatigue? Yes and yes.
 
 ![](man/figures/README-frog-fatigue-1.png)
+
+Do professional frog jumping teams get better results? YES.
+
+![](man/figures/README-frog-type-1.png)

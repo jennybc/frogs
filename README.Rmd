@@ -56,3 +56,10 @@ ggplot(frogs2, aes(x = distance, color = jump_n)) +
   geom_density()
 ```
 
+Do professional frog jumping teams get better results? YES.
+
+```{r frog-type, echo = FALSE}
+ggplot(frogs, aes(x = distance, color = frog_type)) +
+  geom_density()
+```
+
