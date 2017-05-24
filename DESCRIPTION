@@ -12,3 +12,5 @@ LazyData: true
 RoxygenNote: 6.0.1
 Roxygen: list(markdown = TRUE)
 Imports: tibble
+URL: https://github.com/jennybc/frogs, http://jeb.biologists.org/content/216/21/3947
+BugReports: https://github.com/jennybc/frogs/issues
