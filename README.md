@@ -5,10 +5,7 @@ frogs
 
 Data from the Calaveras Jumping Frog Jubilee, as collected for this paper:
 
-Chasing maximal performance: a cautionary tale from the celebrated jumping frogs of Calaveras County
-H. C. Astley, E. M. Abbott, E. Azizi, R. L. Marsh, T. J. Roberts
-Journal of Experimental Biology 2013 216: 3947-3953; doi: 10.1242/jeb.090357
-<http://jeb.biologists.org/content/216/21/3947>
+Chasing maximal performance: a cautionary tale from the celebrated jumping frogs of Calaveras County<br> H. C. Astley, E. M. Abbott, E. Azizi, R. L. Marsh, T. J. Roberts<br> Journal of Experimental Biology 2013 216: 3947-3953; doi: 10.1242/jeb.090357<br> <http://jeb.biologists.org/content/216/21/3947><br>
 
 DATA IS NOT CLEANED YET! Still under development.
 
