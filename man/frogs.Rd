@@ -6,16 +6,13 @@
 \title{Frog jump data}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 3272 rows and 15 columns.}
 \source{
-http://jeb.biologists.org/content/216/21/3947
+\url{http://jeb.biologists.org/content/216/21/3947}
 }
 \usage{
 frogs
 }
 \description{
-Data from the Calaveras Jumping Frog Jubilee, as collected for this paper by
-Astley et al (proper citation coming, on an airplane!): Chasing maximal
-performance: a cautionary tale from the celebrated jumping frogs of Calaveras
-County
+Data from the 2013 Calaveras Jumping Frog Jubilee.
 }
 \details{
 \itemize{
@@ -49,5 +46,11 @@ I'm not sure I understand the annotation here -- CHECK WITH ASTLEY).
 \examples{
 str(frogs)
 head(frogs)
+}
+\references{
+Astley, H. C., Abbott, E. M., Azizi, E., Marsh, R. L., and Roberts, T. J.
+(2013) Chasing maximal performance: a cautionary tale from the celebrated
+jumping frogs of Calaveras County, \emph{Journal of Experimental Biology} \strong{216},
+3947--3953. \url{http://dx.doi.org/10.1242/jeb.090357}
 }
 \keyword{datasets}

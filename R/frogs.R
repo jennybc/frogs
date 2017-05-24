@@ -1,9 +1,6 @@
 #' Frog jump data
 #'
-#' Data from the Calaveras Jumping Frog Jubilee, as collected for this paper by
-#' Astley et al (proper citation coming, on an airplane!): Chasing maximal
-#' performance: a cautionary tale from the celebrated jumping frogs of Calaveras
-#' County
+#' Data from the 2013 Calaveras Jumping Frog Jubilee.
 #'
 
 #' * **day** The day of the contest.  Day 3 was divided into morning (labeled 3)
@@ -42,7 +39,14 @@
 #' variables reflect the angles and velocities for three adjacent frames (JB:
 #' I'm not sure I understand the annotation here -- CHECK WITH ASTLEY).
 #'
-#' @source http://jeb.biologists.org/content/216/21/3947
+#' @references
+#'
+#' Astley, H. C., Abbott, E. M., Azizi, E., Marsh, R. L., and Roberts, T. J.
+#' (2013) Chasing maximal performance: a cautionary tale from the celebrated
+#' jumping frogs of Calaveras County, *Journal of Experimental Biology* **216**,
+#' 3947--3953. <http://dx.doi.org/10.1242/jeb.090357>
+#'
+#' @source <http://jeb.biologists.org/content/216/21/3947>
 #' @importFrom tibble tibble
 #' @examples
 #' str(frogs)
