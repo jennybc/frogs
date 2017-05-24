@@ -21,9 +21,10 @@ County
 \itemize{
 \item \strong{day} The day of the contest.  Day 3 was divided into morning (labeled 3)
 and the finals (3.5)
-\item \strong{frog_type} 1 denotes a "rental frog" (fairgoers paid to "rent" a frog
-from a common pool to compete), 2 is an individual who brought their own
-frog, 3 is an organized "professional" team, and -1 is unknown.
+\item \strong{frog_type} factor. "rental" = fairgoers paid to rent a frog from a
+common pool to compete, "individual" is a person who brought their own frog,
+"pro" is a frog run by an organized "professional" team. The type of the
+remaining frogs is "unknown".
 \item \strong{distance} Jump Distance (cm) - the measured jump distance, as described
 in the paper. Maybe be zero for jumps 2 and 3 if the frog only jumped once.
 \item \strong{jump_n} The first, second, third etc. jump of a sequence.  Note that

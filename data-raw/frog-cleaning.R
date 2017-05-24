@@ -7,7 +7,7 @@ frogs <- read_excel(
   range = cell_rows(1:3273)
 )
 tail(frogs)
-View(tail(frogs))
+View(head(frogs))
 
 frogs <- frogs %>%
   rename(
@@ -30,6 +30,21 @@ frogs <- frogs %>%
     row = seq_len(nrow(.))
   ) %>%
   select(row, everything())
+
+## dbl --> int
+frogs <- frogs %>%
+  mutate(jump_n = as.integer(jump_n))
+
+## frog_type
+frogs <- frogs %>%
+  mutate(
+    frog_type = case_when(
+      frog_type == 1 ~ "rental",
+      frog_type == 2 ~ "individual",
+      frog_type == 3 ~ "pro",
+      frog_type < 0 ~ "unknown"
+    )
+  )
 
 use_data(frogs, overwrite = TRUE)
 
